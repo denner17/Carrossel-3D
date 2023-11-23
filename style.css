@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #272727;
+    font-family: sans-serif;
+    color: #ffffff;
+
+    background-image: url(https://coolwallpapers.me/th700/5543781-theatre-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+
+
+
+/*------------------TITLE------------------*/
+h1{
+    text-align: center;
+    font-size: 200px;
+}
+
+
+/*------------------/TITLE------------------*/
+
+
+/*------------------MAIN CONTENT------------------*/
+    .container{
+        position: relative;
+        width: 320px;
+        margin: 100px auto 0 auto;
+        perspective: 3000px;
+        
+    }
+
+    .carrossel{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        animation: rotate360 9s infinite;   
+        
+        
+
+    }
+
+    /*------------------IMAGE CONFIG------------------*/
+
+        .imagem{
+            position: absolute;
+            width: 290px;
+            height: 187px;
+            top: 40px;
+            left: 10px;
+            right: 10px;
+            background-size: cover;
+            display: flex;
+        }
+    /*------------------/IMAGE CONFIG------------------*/    
+
+    .imagem span{
+        margin: auto;
+        font-size: 1.2em;
+        text-align: center;
+        background: #27272774;
+    }
+
+
+    /*------------------ANIMATION------------------*/
+        @keyframes rotate360 {
+            from{
+                transform: rotateY(0deg);
+            }
+
+            to{
+                transform: rotateY(-360deg);
+            }
+            
+        }
+    /*------------------/ANIMATION------------------*/
+
+
+/*------------------/MAIN CONTENT------------------*/
+
+
+/*----------------IMAGES POSITION-----------------------*/
+
+.imagem:nth-child(1){
+    background-image: url(https://conteudo.imguol.com.br/c/entretenimento/66/2019/06/14/russell-crowe-em-cena-do-filme-gladiador-2000-1560544468601_v2_900x506.png);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://www.otempo.com.br/image/contentid/policy:1.2638101:1647899338/365-Filmes-7-Curiosidades-Sobre-Curtindo-A-Vida-Adoidado-Filme-jpg.jpg?f=3x2&w=1224);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://s2-techtudo.glbimg.com/dcGfaHcvvjRT3YTs6irVkDLJJAk=/0x0:1200x675/888x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/5/E/K2G5RAR1G2RkYqLxfRyQ/capa11.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://criticalhits.com.br/wp-content/uploads/2022/08/O-Senhor-dos-Aneis.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://vidasimples.co/wp-content/uploads/2020/12/353530-voce-nao-vai-acreditar-nestas-20-curiosi-amp_article_image-2-1024x602.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://hbomax-images.warnermediacdn.com/images/GYIbL5QU0QJCtnAEAAAAJ/tile?size=640x360&partner=hbomaxcom&v=bcc48557f8f694a1a21b133cee54ea8e&host=art-gallery.api.hbo.com&language=pt-br);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://media.tenor.com/SIBTkZrfzmIAAAAC/dog-camera.gif);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://pbs.twimg.com/media/FLJKYoPWQAQwDbv.jpg:large);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://istoe.com.br/wp-content/uploads/2019/09/nego-ney-2.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+
+/*----------------/IMAGES POSITION-----------------------*/
+
+
+
+footer{
+    margin-top: 1000px;
+    margin-left: 5px;
+}
